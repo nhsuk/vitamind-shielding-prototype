@@ -1,0 +1,28 @@
+{% set pageTitle = "You have not given permission to ..." %}
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+{% set version = "v1" %}
+
+{% extends "includes/layout.html" %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card__content">
+
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            {{ pageTitle }}
+          </h1>
+
+        </div>
+      </div>
+
+      <p>Your answers have not been saved.</p>
+
+      <h2>Give your permission if you change your mind</h2>
+      <p>...</p>
+
+    </div>
+  </div>
+{% endblock %}
