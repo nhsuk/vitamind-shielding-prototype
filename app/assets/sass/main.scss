@@ -4,6 +4,15 @@
 // Components that are not in the NHS.UK frontend library
 @import 'components/related-nav';
 
-///////////////////////////////////////////
-// Add your custom CSS/Sass styles below... 
-///////////////////////////////////////////
+// Back link fix
+.nhsuk-back-link {
+  @include nhsuk-responsive-padding(4, 'top');
+  margin-bottom: 0;
+}
+
+// IA breadcrumb styles for coronavirus hub pages
+.nhsuk-breadcrumb--hub {
+  background-color: transparent;
+  padding-bottom: nhsuk-spacing(3);
+  padding-top:  20px;
+}
