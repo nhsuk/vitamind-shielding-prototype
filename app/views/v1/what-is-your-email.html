@@ -1,4 +1,4 @@
-{% set pageTitle = "What is your email address?" %}
+{% set pageTitle = "What is your email address? (optional)" %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 {% set version = "v1" %}
 
@@ -33,6 +33,7 @@
             <p>We will send an email in January to let you know if your application is successful.</p>
             <p>If you do not have your own email, you can give us the email address of a trusted friend or family member.</p>
             <p>If you are getting the supplements for someone else, you can enter their email or your own.</p>
+            <p>If you do not enter an email address, we cannot let you know if you are successful or not.</p>
           </span>
 
           <input class="nhsuk-input" id="email" name="email" type="text" value="{{ data['email'] }}">
