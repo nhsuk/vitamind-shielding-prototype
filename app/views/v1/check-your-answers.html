@@ -35,6 +35,19 @@
             </a>
           </dd>
         </div>
+         <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Date of birth
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            {{ data['dob-day'] }} {{ data['dob-month'] }} {{ data['dob-year'] }}
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="/{{version}}/what-is-your-dob">
+              Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">
             NHS number
@@ -45,19 +58,6 @@
           <dd class="nhsuk-summary-list__actions">
             <a href="/{{version}}/what-is-your-email">
               Change<span class="nhsuk-u-visually-hidden"> NHS number</span>
-            </a>
-          </dd>
-        </div>
-        <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">
-            Date of birth
-          </dt>
-          <dd class="nhsuk-summary-list__value">
-            {{ data['dob-day'] }} {{ data['dob-month'] }} {{ data['dob-year'] }}
-          </dd>
-          <dd class="nhsuk-summary-list__actions">
-            <a href="/{{version}}/what-is-your-dob">
-              Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
             </a>
           </dd>
         </div>
