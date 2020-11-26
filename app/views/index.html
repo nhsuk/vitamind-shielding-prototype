@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  {{serviceName}} prototype
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>{{serviceName}} prototype</h1>
+
+      <hr>
+
+      <h2>Version 1</h2>
+      <ul>
+        <li><a href="/v1">{{ serviceName }}</a></li>
+      </ul>
+
+    </div>
+  </div>
+{% endblock %}

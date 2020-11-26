@@ -1,0 +1,71 @@
+{% set pageTitle = "Do you give us permission to use your information?" %}
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+{% set version = "v1" %}
+
+{% extends "includes/layout.html" %}
+
+{% block backLink %}
+<div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/{{version}}/what-is-your-address">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Go back
+  </a>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/{{ version }}/action/permission" method="post" class="form">
+
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+              <h1 class="nhsuk-fieldset__heading">
+                {{ pageTitle }}
+              </h1>
+            </legend>
+            <span class="nhsuk-hint nhsuk-u-margin-bottom-2">
+              We'll use your details to check for a match on the shielded patients list.
+            </span>
+            <span class="nhsuk-hint">
+              If we match your details, we'll share your contact information with the Department of Health and Social Care (DHSC) and the company that will send out the vitamin D supplements.
+            </span>
+
+            <div class="nhsuk-radios">
+              
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="give-permission-1" name="give-permission" type="radio" value="Yes, I give my permission" {{ checked("give-permission", "Yes, I give my permission") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="give-permission-1">
+                  Yes, I give my permission
+                </label>
+              </div>
+          
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="give-permission-2" name="give-permission" type="radio" value="No, I do not give my permission" {{ checked("give-permission", "No, I do not give my permission") }}>
+                <label class="nhsuk-label nhsuk-radios__label" for="give-permission-2">
+                  No, I do not give my permission
+                </label>
+              </div>
+            
+            </div>
+          </fieldset>
+
+        </div>
+         <p>We will keep your answers secure. <a href="#" target="_blank">Find out in the privacy policy how we use your data for this service (opens in a new window)</a>.</p>
+
+        <button class="nhsuk-button" type="submit">
+          Continue
+        </button>
+        
+       
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}

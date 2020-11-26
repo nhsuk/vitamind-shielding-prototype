@@ -1,0 +1,43 @@
+{% set pageTitle = "Application complete" %}
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+{% set version = "v1" %}
+
+{% extends "includes/layout.html" %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-5">
+        <div class="nhsuk-card__content">
+
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            {{ pageTitle }}
+          </h1>
+          
+          <p>We have received your application for vitamin D supplements.</p>
+          <p>Please make a note of your reference number, in case you need to contact us.</p>
+          
+          <p class="nhsuk-u-font-size-24">
+            Your reference number
+            <br>
+            <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+          </p>
+
+        </div>
+
+      </div>
+
+      <h2>What happens next</h2>
+
+      <p>We will check your details against the shielded patients list.</p>
+      <h3>If we match your details</h3>
+      <p>If you entered an email address, we'll let you know that your application was successful and we'll send out your supplements in January.</p>
+      <p>If you do not receive them by [date in January)], contact X.</p>
+      <h3>If we cannot match your details</h3>
+      <p>If you entered an email address, we'll let you know that your application was not successful.</p>
+      <p>If you're at <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/whos-at-higher-risk-from-coronavirus/">high risk from coronavirus</a> and you think you should be on the shielded patients list but you have not received a letter to confirm this, speak to your GP or hospital care team.</p>
+
+    </div>
+  </div>
+{% endblock %}
