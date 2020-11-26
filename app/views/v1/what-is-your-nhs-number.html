@@ -24,13 +24,13 @@
 
         <div class="nhsuk-form-group">
           <h1 class="nhsuk-label-wrapper">
-            <label class="nhsuk-label nhsuk-label--l nhsuk-u-margin-bottom-4" for="nhs-number">
+            <label class="nhsuk-label nhsuk-label--l" for="nhs-number">
               {{ pageTitle }}
             </label>
           </h1>
           <div class="nhsuk-hint" id="nhs-number-hint">
-            <p class="nhsuk-u-margin-bottom-4">Your NHS number is a 10 digit number in the letter you have received. For example, 485 777 3456.</p>
-            <p>If you're getting the supplements for someone else, enter their NHS number from the letter.</p>
+            <p class="nhsuk-hint">Your NHS number is a 10 digit number in the letter you have received. For example, 485 777 3456.</p>
+            <p class="nhsuk-hint">If you're getting the supplements for someone else, enter their NHS number from the letter.</p>
           </div>
           <input class="nhsuk-input nhsuk-input--width-10" id="nhs-number" name="nhs-number" type="text" value="{{ data['nhs-number'] }}" aria-describedby="nhs-number-hint">
         </div>
