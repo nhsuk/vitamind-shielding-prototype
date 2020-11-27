@@ -1,4 +1,4 @@
-{% set pageTitle = "Do you give us permission to use your information?" %}
+{% set pageTitle = "Do you give us permission to use your information to send you the supplements?" %}
 {% set mainClasses = "nhsuk-main-wrapper--s" %}
 {% set version = "v1" %}
 
@@ -33,6 +33,10 @@
             <div class="nhsuk-hint" id="dob-hint">
               <p class="nhsuk-hint">We'll use your details to check for a match on the shielded patients list.</p>
               <p class="nhsuk-hint">If we match your details, we'll share your name and address with the company working for DHSC that will send out the vitamin D supplements.</p>
+            </div>
+
+            <div class="nhsuk-inset-text nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-5">
+              <span class="nhsuk-u-visually-hidden">Information: </span>
               <p>We will only send out supplements if you give us permission.</p>
             </div>
 
@@ -48,7 +52,7 @@
               <div class="nhsuk-radios__item">
                 <input class="nhsuk-radios__input" id="give-permission-2" name="give-permission" type="radio" value="No, I do not give my permission" {{ checked("give-permission", "No, I do not give my permission") }}>
                 <label class="nhsuk-label nhsuk-radios__label" for="give-permission-2">
-                  <p>No, I do not give my permission<p>
+                  No, I do not give my permission
                 </label>
               </div>
             

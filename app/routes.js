@@ -16,7 +16,7 @@ router.post('/*/action/permission', function (req, res) {
   }
   else {
     // Send user to a confirm permission page
-    res.redirect(`/${version}/do-you-give-permission-confirmation`)
+    res.redirect(`/${version}/no-permission-given`)
   }
 
 })
